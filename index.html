@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="styles.css">
+
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+  <title>Frontend Mentor | Rock, Paper, Scissors</title>
+
+</head>
+
+<body>
+
+  <div class="header-div">
+    <img class="logo" src="images/logo.svg" alt="ROCK PAPER SCISSORS">
+    <div class="score-div">
+      <p class="score-text">SCORE</p>
+      <p class="current-score">0</p>
+    </div>
+  </div>
+
+  <div class="game-div">
+
+    <h2 class="you-title">YOU PICKED</h2>
+    <h2 class="house-title">THE HOUSE PICKED</h2>
+
+    <div class="border-circle paper player"><button type="button" class="circle-button paper"><img src="images/icon-paper.svg" alt="PAPER"></button></div>
+    <div class="border-circle scissors player"><button type="button" class="circle-button scissors"><img src="images/icon-scissors.svg" alt="SCISSORS"></button></div>
+    <div class="border-circle rock player"><button type="button" class="circle-button rock"><img src="images/icon-rock.svg" alt="ROCK"></button></div>
+
+    <h1 class="you-win result">YOU WIN</h1>
+    <h1 class="house-win result">YOU LOSE</h1>
+    <h1 class="draw result">DRAW</h1>
+    <button type="button" class="play-again">PLAY AGAIN</button>
+
+    <div class="border-circle paper computer"><button type="button" class="circle-button paper"><img src="images/icon-paper.svg" alt="PAPER"></button></div>
+    <div class="border-circle scissors computer"><button type="button" class="circle-button scissors"><img src="images/icon-scissors.svg" alt="SCISSORS"></button></div>
+    <div class="border-circle rock computer"><button type="button" class="circle-button rock"><img src="images/icon-rock.svg" alt="ROCK"></button></div>
+  </div>
+
+
+  <div class="rules-popup">
+
+    <div class="popup-content">
+      <button type="button" class="close-popup">×</button>
+      <h2 class="popup-title">RULES</h2>
+      <img class="image-rules" src="images/image-rules.svg" alt="RULES">
+    </div>
+
+  </div>
+
+
+  <button type="button" class="rules-button">RULES</button>
+
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Alexandra Bridot</a>.
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="game.js" charset="utf-8"></script>
+</body>
+</html>
